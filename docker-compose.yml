@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  qnap2pushover:
+    image: cmassa/qnap2pushover
+    container_name: qnap2pushover
+    tty: true
+    command: tail -F /dev/null
+    ports:
+      - "25:25/tcp"
+    environment:
+      - API_TOKEN= # Put your app token here
+      - USER_KEY= # Put your user token here
+      - LOG_LEVEL=INFO
+    restart: always

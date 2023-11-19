@@ -1,0 +1,5 @@
+devcontainer.json
+.devcontainer/
+.github/
+__pycache__/
+myenv/
